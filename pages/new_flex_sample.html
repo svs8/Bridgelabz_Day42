@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+    <style>
+        body {
+			 padding: 2em;
+		 }
+		 .headerContainer {
+			 display: flex;
+			 flex-flow: column wrap;
+			 align-content: center;
+			 background: lightcoral;
+			 font-weight: bold;
+			 padding: 10px;
+		 }
+
+		 .footerContainer { 
+			 display: flex;
+			 flex-flow: column wrap;
+			 align-content: center;
+			 background: green;
+			 font-weight: bold;
+			 padding: 10px;
+		 }
+
+		 .mainContainer {
+			 display: flex;
+			 flex-flow: row wrap;
+			 align-content: center;
+			 font-weight: bold;
+		 }
+
+		 .mainContentItem {
+       text-align: left;
+			 background: blue;
+		 }
+
+		 article {
+			 padding: 10px;
+			 margin: 10px;
+			 background: skyblue;
+		 }
+
+		 .sideBarLeftItem {
+			 text-align: center;
+       background: gold; 
+		 }
+
+		 /* .sideBarRightItem {
+			 text-align: center;
+       background: gold;
+		 } */
+
+		 .sideBarItem {
+			 flex: 1 0 0;
+			 border: 0px solid green;
+		 }
+
+		 .mainContentItem {
+			 flex: 4 0px;
+		 }
+
+		 .sideBarLeftItem { order: 1; }
+     .mainContentItem { order: 2; }
+		 /* .sideBarRightItem { order: 3; } */
+
+
+    </style>
+ </head>
+ <header class="headerContainer"><h1>HEADER-Sample Flexbox Example</h1></header>
+ <div class="mainContainer">
+   <section class="mainContentItem">
+
+   <article>
+       <h2>First Section</h2>
+       <p>"As with most essays, the three-paragraph essay has three parts: an introduction, a body, and a conclusion. Yet with this type of essay–unlike its five-paragraph counterpart–each one of these sections has only one paragraph. The three-paragraph essay, therefore, might be ideal for young writers or those who are currently mastering the English language.” </p>
+   </article>
+
+   <article>
+       <h2>Second Section</h2>
+       <p>Another benefit to the three-paragraph essay could be that it requires you to condense your supporting points into just one, which can be a good exercise. If you had to choose only one point to convince a reader to agree with you, what would it be? </p>
+   </article>
+
+   <article>
+       <h2>Third Section</h2>
+       <p>After performing some light prewriting, such as brainstorming or writing an outline, students can move right into composing the essay. While this process is similar across the board for writing academic papers, the three-paragraph essay is unique in that the body will take up less space in the finished product. </p>
+       
+   </article>
+
+ </section>
+   <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+   <!-- <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>	 -->
+   </div>
+   <footer class="footerContainer"><strong>End Of the Article</strong></footer>
+
+</body>
+</html>
